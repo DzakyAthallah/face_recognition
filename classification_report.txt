@@ -2,15 +2,16 @@ FACE RECOGNITION - CLASSIFICATION REPORT
 ============================================================
 
 Model: face_recognition_model.h5
-Total samples: 25
-Accuracy: 100.00%
+Total samples: 49
+Accuracy: 97.96%
 ============================================================
 
               precision    recall  f1-score   support
 
-        izza      1.000     1.000     1.000        14
-       nanta      1.000     1.000     1.000        11
+        dani      1.000     0.909     0.952        11
+        izza      1.000     1.000     1.000        19
+       nanta      0.950     1.000     0.974        19
 
-    accuracy                          1.000        25
-   macro avg      1.000     1.000     1.000        25
-weighted avg      1.000     1.000     1.000        25
+    accuracy                          0.980        49
+   macro avg      0.983     0.970     0.976        49
+weighted avg      0.981     0.980     0.979        49

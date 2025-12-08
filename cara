@@ -1,0 +1,7 @@
+urutane 
+1. run nak terminal
+pip install -r requirements.txt
+2. run python sesuai urutan 
+check - extract - split - training - testing - main - demo_realtime (hapus semua testing yaa biar mencoba e seperti awal fresh)
+buat yang spreadsheet masih otw jadi jangan di run dlu 
+terus buat yang demo.py jangan di run sekarang pake demo_realtime sebenere sama aja tapi mager mindah e hehe
