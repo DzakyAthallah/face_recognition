@@ -22,24 +22,14 @@ print(f"Prediction shape: {prediction.shape}")
 print(f"Raw scores: {prediction}")
 print()
 
-# Test dengan SEMUA kemungkinan urutan
-orders = [
-    ["dani", "izza", "nanta"],
-    ["nanta", "dani", "izza"],
-    ["izza", "nanta", "dani"],
-    ["dani", "nanta", "izza"],
-    ["izza", "dani", "nanta"],
-    ["nanta", "izza", "dani"]
-]
+# Label sesuai urutan folder training (alfabet)
+names = ["dani", "dzaky", "izza", "nanta", "samul"]
 
-for i, names in enumerate(orders, 1):
-    max_idx = np.argmax(prediction)
-    max_score = prediction[max_idx]
-    predicted_name = names[max_idx]
-    
-    print(f"ORDER {i}: {names}")
-    print(f"  Max index: {max_idx}")
-    print(f"  Max score: {max_score:.4f}")
-    print(f"  Predicted: {predicted_name}")
-    print(f"  All scores: {[f'{s:.4f}' for s in prediction]}")
-    print()
+max_idx = np.argmax(prediction)
+max_score = prediction[max_idx]
+predicted_name = names[max_idx]
+
+print(f"Max index: {max_idx}")
+print(f"Max score: {max_score:.4f}")
+print(f"Predicted: {predicted_name}")
+print(f"All scores: {[f'{s:.4f}' for s in prediction]}")
